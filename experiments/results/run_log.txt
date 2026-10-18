@@ -1,0 +1,68 @@
+
+===== NSL-KDD =====
+[bin s0] Logistic Regression  acc=0.7537 f1=0.7424 fpr=0.0741
+[bin s0] Decision Tree        acc=0.8013 f1=0.7944 fpr=0.0312
+[bin s0] Random Forest        acc=0.7776 f1=0.7632 fpr=0.0267
+[bin s0] XGBoost              acc=0.7935 f1=0.7841 fpr=0.0284
+[bin s0] MLP (DNN)            acc=0.7840 f1=0.7807 fpr=0.0723
+[bin s1] Logistic Regression  acc=0.7537 f1=0.7424 fpr=0.0741
+[bin s1] Decision Tree        acc=0.7972 f1=0.7898 fpr=0.0336
+[bin s1] Random Forest        acc=0.7779 f1=0.7635 fpr=0.0264
+[bin s1] XGBoost              acc=0.7935 f1=0.7841 fpr=0.0284
+[bin s1] MLP (DNN)            acc=0.7950 f1=0.7861 fpr=0.0288
+[bin s2] Logistic Regression  acc=0.7537 f1=0.7424 fpr=0.0741
+[bin s2] Decision Tree        acc=0.8115 f1=0.8083 fpr=0.0384
+[bin s2] Random Forest        acc=0.7674 f1=0.7496 fpr=0.0268
+[bin s2] XGBoost              acc=0.7935 f1=0.7841 fpr=0.0284
+[bin s2] MLP (DNN)            acc=0.7717 f1=0.7632 fpr=0.0626
+[multi] Logistic Regression  acc=0.7606 macroF1=0.5269
+[multi] Decision Tree        acc=0.7638 macroF1=0.5278
+[multi] Random Forest        acc=0.7496 macroF1=0.4945
+[multi] XGBoost              acc=0.7791 macroF1=0.5407
+[multi] MLP (DNN)            acc=0.7721 macroF1=0.5637
+[fs k=10] Random Forest  acc=0.7606 f1=0.7405 train=3.38s
+[fs k=10] XGBoost        acc=0.7596 f1=0.7390 train=1.25s
+[fs k=20] Random Forest  acc=0.7685 f1=0.7508 train=3.62s
+[fs k=20] XGBoost        acc=0.7805 f1=0.7671 train=1.26s
+[fs k=30] Random Forest  acc=0.7722 f1=0.7560 train=4.11s
+[fs k=30] XGBoost        acc=0.7971 f1=0.7885 train=1.53s
+[fs k=122] Random Forest  acc=0.7753 f1=0.7602 train=4.76s
+[fs k=122] XGBoost        acc=0.7912 f1=0.7812 train=3.76s
+[gap] Decision Tree  random=0.9979 official=0.8013
+[gap] Random Forest  random=0.9988 official=0.7776
+[gap] XGBoost        random=0.9988 official=0.7935
+
+===== UNSW-NB15 =====
+[bin s0] Logistic Regression  acc=0.8093 f1=0.8488 fpr=0.3905
+[bin s0] Decision Tree        acc=0.8631 f1=0.8848 fpr=0.2496
+[bin s0] Random Forest        acc=0.8711 f1=0.8938 fpr=0.2683
+[bin s0] XGBoost              acc=0.8754 f1=0.8969 fpr=0.2583
+[bin s0] MLP (DNN)            acc=0.8589 f1=0.8843 fpr=0.2892
+[bin s1] Logistic Regression  acc=0.8093 f1=0.8488 fpr=0.3905
+[bin s1] Decision Tree        acc=0.8627 f1=0.8845 fpr=0.2498
+[bin s1] Random Forest        acc=0.8717 f1=0.8942 fpr=0.2672
+[bin s1] XGBoost              acc=0.8754 f1=0.8969 fpr=0.2583
+[bin s1] MLP (DNN)            acc=0.8628 f1=0.8863 fpr=0.2707
+[bin s2] Logistic Regression  acc=0.8093 f1=0.8488 fpr=0.3905
+[bin s2] Decision Tree        acc=0.8632 f1=0.8851 fpr=0.2514
+[bin s2] Random Forest        acc=0.8713 f1=0.8939 fpr=0.2680
+[bin s2] XGBoost              acc=0.8754 f1=0.8969 fpr=0.2583
+[bin s2] MLP (DNN)            acc=0.8546 f1=0.8815 fpr=0.3013
+[multi] Logistic Regression  acc=0.6981 macroF1=0.3395
+[multi] Decision Tree        acc=0.7332 macroF1=0.4980
+[multi] Random Forest        acc=0.7539 macroF1=0.4634
+[multi] XGBoost              acc=0.7700 macroF1=0.5070
+[multi] MLP (DNN)            acc=0.7586 macroF1=0.4377
+[fs k=10] Random Forest  acc=0.8724 f1=0.8929 train=7.15s
+[fs k=10] XGBoost        acc=0.8637 f1=0.8880 train=1.23s
+[fs k=20] Random Forest  acc=0.8664 f1=0.8892 train=12.04s
+[fs k=20] XGBoost        acc=0.8623 f1=0.8869 train=1.59s
+[fs k=30] Random Forest  acc=0.8695 f1=0.8926 train=11.09s
+[fs k=30] XGBoost        acc=0.8701 f1=0.8928 train=2.03s
+[fs k=194] Random Forest  acc=0.8709 f1=0.8936 train=10.95s
+[fs k=194] XGBoost        acc=0.8752 f1=0.8968 train=7.71s
+[gap] Decision Tree  random=0.9497 official=0.8631
+[gap] Random Forest  random=0.9592 official=0.8711
+[gap] XGBoost        random=0.9564 official=0.8754
+
+Saved /home/claude/ids/code/../results/results.json

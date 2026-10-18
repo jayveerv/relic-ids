@@ -1,0 +1,68 @@
+[R1] known attacks=9083  novel attacks=3750  novel types=17
+                     known_dr  novel_dr
+model                                  
+Decision Tree          0.7885    0.4190
+Logistic Regression    0.7131    0.4061
+MLP (DNN)              0.7602    0.4210
+Random Forest          0.7675    0.2753
+XGBoost                0.7734    0.3808
+[R2] NSL-KDD   Random Forest target=None thr=0.5000 testFPR=0.0274 recall=0.6033 f1=0.7430
+[R2] NSL-KDD   Random Forest target=0.05 thr=0.0100 testFPR=0.1510 recall=0.9835 f1=0.9377
+[R2] NSL-KDD   Random Forest target=0.01 thr=0.0800 testFPR=0.0997 recall=0.8808 f1=0.9005
+[R2] NSL-KDD   XGBoost       target=None thr=0.5000 testFPR=0.0281 recall=0.6572 f1=0.7831
+[R2] NSL-KDD   XGBoost       target=0.05 thr=0.0017 testFPR=0.1094 recall=0.8904 f1=0.9025
+[R2] NSL-KDD   XGBoost       target=0.01 thr=0.0139 testFPR=0.0380 recall=0.8030 f1=0.8768
+[R2] UNSW-NB15 Random Forest target=None thr=0.5000 testFPR=0.2764 recall=0.9852 f1=0.8912
+[R2] UNSW-NB15 Random Forest target=0.05 thr=0.6200 testFPR=0.1929 recall=0.9664 f1=0.9101
+[R2] UNSW-NB15 Random Forest target=0.01 thr=0.8508 testFPR=0.0516 recall=0.8922 f1=0.9225
+[R2] UNSW-NB15 XGBoost       target=None thr=0.5000 testFPR=0.2593 recall=0.9855 f1=0.8971
+[R2] UNSW-NB15 XGBoost       target=0.05 thr=0.6301 testFPR=0.1784 recall=0.9691 f1=0.9165
+[R2] UNSW-NB15 XGBoost       target=0.01 thr=0.8665 testFPR=0.0449 recall=0.9097 f1=0.9348
+[R3] NSL-KDD   Random Forest None              macroF1=0.4945
+[R3] NSL-KDD   XGBoost       None              macroF1=0.5407
+[R3] NSL-KDD   Random Forest Balanced weights  macroF1=0.4982
+[R3] NSL-KDD   XGBoost       Balanced weights  macroF1=0.5490
+[R3] NSL-KDD   Random Forest SMOTE             macroF1=0.5001
+[R3] NSL-KDD   XGBoost       SMOTE             macroF1=0.5809
+[R3] UNSW-NB15 Random Forest None              macroF1=0.4634
+[R3] UNSW-NB15 XGBoost       None              macroF1=0.5070
+[R3] UNSW-NB15 Random Forest Balanced weights  macroF1=0.4992
+[R3] UNSW-NB15 XGBoost       Balanced weights  macroF1=0.5073
+[R3] UNSW-NB15 Random Forest SMOTE             macroF1=0.4868
+[R3] UNSW-NB15 XGBoost       SMOTE             macroF1=0.4890
+[R4] NSL-KDD   k=1 ['src_bytes'] alpha=0.00 detection=1.0000
+[R4] NSL-KDD   k=1 ['src_bytes'] alpha=0.25 detection=0.7006
+[R4] NSL-KDD   k=1 ['src_bytes'] alpha=0.50 detection=0.7085
+[R4] NSL-KDD   k=1 ['src_bytes'] alpha=0.75 detection=0.6310
+[R4] NSL-KDD   k=1 ['src_bytes'] alpha=1.00 detection=0.5971
+[R4] NSL-KDD   k=2 ['src_bytes', 'dst_host_srv_count'] alpha=0.00 detection=1.0000
+[R4] NSL-KDD   k=2 ['src_bytes', 'dst_host_srv_count'] alpha=0.25 detection=0.6130
+[R4] NSL-KDD   k=2 ['src_bytes', 'dst_host_srv_count'] alpha=0.50 detection=0.6294
+[R4] NSL-KDD   k=2 ['src_bytes', 'dst_host_srv_count'] alpha=0.75 detection=0.5986
+[R4] NSL-KDD   k=2 ['src_bytes', 'dst_host_srv_count'] alpha=1.00 detection=0.2962
+[R4] NSL-KDD   k=3 ['src_bytes', 'dst_host_srv_count', 'count'] alpha=0.00 detection=1.0000
+[R4] NSL-KDD   k=3 ['src_bytes', 'dst_host_srv_count', 'count'] alpha=0.25 detection=0.6126
+[R4] NSL-KDD   k=3 ['src_bytes', 'dst_host_srv_count', 'count'] alpha=0.50 detection=0.6225
+[R4] NSL-KDD   k=3 ['src_bytes', 'dst_host_srv_count', 'count'] alpha=0.75 detection=0.4517
+[R4] NSL-KDD   k=3 ['src_bytes', 'dst_host_srv_count', 'count'] alpha=1.00 detection=0.1139
+[R4] UNSW-NB15 k=1 ['sttl'] alpha=0.00 detection=1.0000
+[R4] UNSW-NB15 k=1 ['sttl'] alpha=0.25 detection=0.8362
+[R4] UNSW-NB15 k=1 ['sttl'] alpha=0.50 detection=0.8362
+[R4] UNSW-NB15 k=1 ['sttl'] alpha=0.75 detection=0.8362
+[R4] UNSW-NB15 k=1 ['sttl'] alpha=1.00 detection=0.0019
+[R4] UNSW-NB15 k=2 ['sttl', 'ct_dst_sport_ltm'] alpha=0.00 detection=1.0000
+[R4] UNSW-NB15 k=2 ['sttl', 'ct_dst_sport_ltm'] alpha=0.25 detection=0.8358
+[R4] UNSW-NB15 k=2 ['sttl', 'ct_dst_sport_ltm'] alpha=0.50 detection=0.8358
+[R4] UNSW-NB15 k=2 ['sttl', 'ct_dst_sport_ltm'] alpha=0.75 detection=0.8347
+[R4] UNSW-NB15 k=2 ['sttl', 'ct_dst_sport_ltm'] alpha=1.00 detection=0.0019
+[R4] UNSW-NB15 k=3 ['sttl', 'ct_dst_sport_ltm', 'ct_state_ttl'] alpha=0.00 detection=1.0000
+[R4] UNSW-NB15 k=3 ['sttl', 'ct_dst_sport_ltm', 'ct_state_ttl'] alpha=0.25 detection=0.8358
+[R4] UNSW-NB15 k=3 ['sttl', 'ct_dst_sport_ltm', 'ct_state_ttl'] alpha=0.50 detection=0.7664
+[R4] UNSW-NB15 k=3 ['sttl', 'ct_dst_sport_ltm', 'ct_state_ttl'] alpha=0.75 detection=0.5959
+[R4] UNSW-NB15 k=3 ['sttl', 'ct_dst_sport_ltm', 'ct_state_ttl'] alpha=1.00 detection=0.0014
+[R5] Logistic Regression  size=      1.4 KB  latency=0.233 ms  throughput=6,235,621 flows/s
+[R5] Decision Tree        size=    889.5 KB  latency=0.109 ms  throughput=4,649,081 flows/s
+[R5] Random Forest        size= 110789.8 KB  latency=6.232 ms  throughput=121,826 flows/s
+[R5] XGBoost              size=    517.3 KB  latency=0.322 ms  throughput=310,120 flows/s
+[R5] MLP (DNN)            size=    398.6 KB  latency=0.143 ms  throughput=209,854 flows/s
+Saved /home/claude/ids/code/../results/relic.json

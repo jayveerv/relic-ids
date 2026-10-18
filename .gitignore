@@ -1,0 +1,7 @@
+relic_history.db
+runs/
+data/*.csv
+data/*.txt
+__pycache__/
+.pytest_cache/
+.venv/
