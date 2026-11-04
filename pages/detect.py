@@ -40,7 +40,11 @@ with st.sidebar:
                          help="Off by default: a lab-trained model raises many false alarms on traffic it was not trained on.")
 
 # ------------------------------------------------------------------ input
-src = st.radio("Traffic source", ["Demo capture", "Upload PCAP", "Upload CSV", "Live capture"], horizontal=True)
+PUBLIC = os.environ.get("RELIC_PUBLIC", "0") not in ("", "0", "false", "no")  # hosted demo: no live capture
+sources = ["Demo capture", "Upload PCAP", "Upload CSV"] + ([] if PUBLIC else ["Live capture"])
+src = st.radio("Traffic source", sources, horizontal=True)
+if PUBLIC:
+    st.caption("Hosted demo: live capture is off. Run RELIC-IDS on your own machine to capture live traffic.")
 data_label, flows, dataset_df, truth = None, None, None, None
 
 if src == "Demo capture":
