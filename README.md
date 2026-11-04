@@ -2,6 +2,8 @@
 
 **A hybrid intrusion detection system for cloud and enterprise networks, and the research behind it.**
 
+**Live demo:** https://relic-ids.onrender.com (free hosting: the first visit after a quiet period can take up to a minute; live capture is off online)
+
 RELIC-IDS reads packet captures, flow CSV files or live traffic, groups packets into flows, scores every flow with three independent detection layers, explains each alert and keeps a history you can export as a PDF incident report.
 
 It accompanies the paper *Beyond 99% Accuracy: A Critical Review and Re-evaluation of AI-Based Intrusion Detection for Cloud Environments* (Jayveer Vasava, M.Tech Cyber Security, Parul University), included in [`paper/`](paper/) as an IEEE two-column PDF (`Beyond_99_Accuracy_IEEE.pdf`), its LaTeX source (`paper/ieee/`) and a single-column version.
